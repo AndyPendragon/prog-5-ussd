@@ -1,0 +1,25 @@
+{
+  "name": "prog-5-ussd",
+  "version": "1.0.0",
+  "description": "CopyCat de menu USSD : Orange Money",
+  "homepage": "https://github.com/AndyPendragon/prog-5-ussd#readme",
+  "bugs": {
+    "url": "https://github.com/AndyPendragon/prog-5-ussd/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndyPendragon/prog-5-ussd.git"
+  },
+  "license": "ISC",
+  "author": "AndyPendragon",
+  "type": "commonjs",
+  "main": "main.ts",
+  "scripts": {
+    "lint": "biome lint --write .",
+    "format": "biome format --write .",
+    "check": "biome check --write ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4"
+  }
+}
