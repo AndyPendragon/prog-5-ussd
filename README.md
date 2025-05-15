@@ -3,6 +3,14 @@
 Simulation d’un menu USSD Orange Money en TypeScript, exécuté dans un environnement Deno.
 Projet inspiré des menus interactifs sur mobile _(ex: #111#)_.
 
+## ⚡ Getting Started
+
+> Assure-toi d’avoir `Deno` et `pnpm` installés sur ta machine.
+
+```bash
+pnpm install        # Installation des dépendances
+pnpm start          # Lance l'application avec le menu principal
+```
 ## 🚀 Technologies utilisées
 
 - **TypeScript** : Superset de JavaScript avec typage statique, idéal pour construire des projets robustes et évolutifs.
