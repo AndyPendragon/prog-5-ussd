@@ -15,6 +15,7 @@
   "type": "commonjs",
   "main": "main.ts",
   "scripts": {
+    "start": "deno run --allow-read main.ts",
     "lint": "biome lint --write .",
     "format": "biome format --write .",
     "check": "biome check --write ."
