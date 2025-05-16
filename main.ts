@@ -1,4 +1,4 @@
-import { menu, type MenuItem } from "./model/menu.ts";
+import { type MenuItem, menu } from "./model/menu.ts";
 
 function displayMainMenu(menu: MenuItem) {
   console.log(menu.label);
@@ -9,7 +9,7 @@ function displayMainMenu(menu: MenuItem) {
   }
 }
 function displaySubMenu(menu: MenuItem, inputKey: string) {
-  const found = menu.children?.find(item => item.key === inputKey);
+  const found = menu.children?.find((item) => item.key === inputKey);
   if (!found) {
     console.log("\nOption invalide.");
     return;
@@ -29,7 +29,9 @@ async function main() {
   displayMainMenu(menu);
 
   const buf = new Uint8Array(1024);
-  await Deno.stdout.write(new TextEncoder().encode("\nChoisissez une option: "));
+  await Deno.stdout.write(
+    new TextEncoder().encode("\nChoisissez une option: "),
+  );
   const n = <number>await Deno.stdin.read(buf);
 
   const input = new TextDecoder().decode(buf.subarray(0, n)).trim();
